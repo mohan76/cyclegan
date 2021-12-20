@@ -127,7 +127,7 @@ def main():
         root_horse=config.TRAIN_DIR+"/horses", root_zebra=config.TRAIN_DIR+"/zebras", transform=config.transforms
     )
     val_dataset = HorseZebraDataset(
-       root_horse=config.VAL_DIR+"/horse1", root_zebra=config.VAL_DIR+"/zebra1", transform=config.transforms
+        root_horse=config.VAL_DIR+"/horse1", root_zebra=config.VAL_DIR+"/zebra1", transform=config.transforms
     )
     val_loader = DataLoader(
         val_dataset,
